@@ -1153,4 +1153,64 @@ footer p{
     border .3s;
 
 }
+.light-theme{
 
+    --bg-color:#F8FAFC;
+
+    --secondary-bg:#FFFFFF;
+
+    --card-color:#E2E8F0;
+
+    --text:#0F172A;
+
+    --text-light:#475569;
+
+}
+.hidden{
+
+    opacity:0;
+
+    transform:translateY(60px);
+
+    transition:1s;
+
+}
+
+.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+.active{
+
+    color:var(--primary)!important;
+
+}
+.logo img{
+
+    animation:floatLogo 4s ease-in-out infinite;
+
+}
+@keyframes floatLogo{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-6px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
